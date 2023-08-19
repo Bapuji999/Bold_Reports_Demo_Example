@@ -30,9 +30,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@boldreports/javascript-reporting-controls/Content/material/bold.reports.all.min.css",
+             "./node_modules/@boldreports/javascript-reporting-controls/Content/material/bold.reportdesigner.min.css",
+             "./node_modules/codemirror/lib/codemirror.css",
+             "./node_modules/codemirror/addon/hint/show-hint.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/codemirror/lib/codemirror.js",
+              "./node_modules/codemirror/addon/hint/show-hint.js",
+              "./node_modules/codemirror/addon/hint/sql-hint.js",
+              "./node_modules/codemirror/mode/vb/vb.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -93,12 +102,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@boldreports/javascript-reporting-controls/Content/material/bold.reports.all.min.css",
+             "./node_modules/@boldreports/javascript-reporting-controls/Content/material/bold.reportdesigner.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/codemirror/lib/codemirror.js",
+              "./node_modules/codemirror/addon/hint/show-hint.js",
+              "./node_modules/codemirror/addon/hint/sql-hint.js",
+              "./node_modules/codemirror/mode/vb/vb.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
